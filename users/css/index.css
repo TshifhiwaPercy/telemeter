@@ -80,16 +80,50 @@ body{
     }
     /*Desktop navbar*/
     @media(min-width:901px){
+    	#companyLogo{
+    		position:absolute;
+    		display:flex;
+    		float:left;
+    		margin-top:10px;
+    		margin-left:40px;
+    		text-align:center;
+    		align-content:center;
+
+    	}
     	.navMenu{
     		float:right;
+    		margin-right:10px;
+    		padding:0;
     		
     	}
     	.navItem{
     		position:relative;
     		display:inline-flex;
-    		margin-left:20px;
-    	
+    		margin-left:25px;   	
     	}
+    	.navLink{
+    		margin-top:10px;
+    		margin-bottom:0;
+    		height:100%;
+    		padding:20px;
+    		border-radius:10px 10px 10px 10px;
+
+    	}
+    	#menu_opener_container{
+    		position: absolute;
+    		visibility: hidden;
+    	}
+
+    	/*Hover*/
+    	.navLink:hover{
+    		color:blue;
+    		text-decoration:none;
+    		background-color:#ffea00;
+    		height:80%;
+    		transition:background-color 1s ease-in-out;
+    		
+    	}
+    	
     }
 
     /*main_content*/
@@ -116,6 +150,19 @@ body{
     	height:40%;
 
     }
+    .content_container{
+    	background-color:blue;
+    	position: absolute;
+    	width:100%;
+    }
+    	.content{
+    		text-align:center;
+    	}
+    		.developer_image{
+    			height:200px;
+    			width:200px;
+    			border-radius:50%;
+    		}
 
 
 

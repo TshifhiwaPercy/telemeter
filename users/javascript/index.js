@@ -33,8 +33,9 @@ function openMenu(){
 		
 			navMenu.style.marginTop = "0";
 			menuOpen = true;
+			menuIcon.style.transform="skew(20deg, -30deg)";
+			menuIcon.style.transition="transform 10s ease-in";
 			menuIcon.className = "bi-x";
-			menu_opener_link.innerHtml+="close";
 		}
 		navMenu.style.transition = "margin-top 1s ease-in-out";
 	
