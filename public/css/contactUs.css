@@ -1,0 +1,85 @@
+	.contactBody{
+		background-image:url("../images/light-bulb-4514505_1920.jpg");
+		background-size:100% 100%;
+		background-position:center;
+		background-repeat:no-repeat;
+		background-attachment: fixed;
+
+	}
+
+	.outer_contactUs {
+		width: 100%;
+	}
+	.contactBody {
+		background-color: rgb(31, 137, 152);
+		background-size: cover;
+		margin: 0;
+		padding: 0;
+	}
+	.contact_form {
+		position: absolute;
+		width: 90%;
+		max-width: 600px;
+		background-color: #37474f;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		padding: 30px 40px;
+		box-sizing: border-box;
+		border-radius: 8px;
+		text-align: center;
+		box-shadow: 0 0 20px #000000b3;
+
+	}
+	.contact_form h1 {
+		margin-top: 0;
+		font-weight: 700;
+		color: rgb(29, 163, 158);
+	}
+	.txtb {
+		border: 1px solid grey;
+		margin: 5px 0;
+		padding: 12px 18px;
+		border-radius: 8px;
+	}
+	.txtb:hover {
+		box-shadow: 0 0.4rem 1.4rem 0 rgb(29, 163, 158);
+		transform: translateY(-0.1rem);
+		transition: transform 150ms;
+	}
+	.txtb label {
+		display: block;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 600;
+		color: rgb(29, 163, 158);
+	}
+	.txtb input,.txtb textarea{
+		width: 100%;
+		border: none;
+		background: none;
+		outline: none;
+		font-size: 18px;
+		margin-top: 6px;
+		color: #e0e0e0;
+	}
+	.btn {
+		display: block;
+		background: #ffea00;
+		text-transform: uppercase;
+		cursor: pointer;
+		margin-top: 8px;
+		width: 100%;
+	}
+	.btn:hover {
+		box-shadow: 0 0.4rem 1.4rem 0 #ffea00;
+		transform: translateY(-0.1rem);
+		transition: transform 150ms;
+	}
+	.main_contact_content {
+		position:absolute;
+    	height:100%;
+    	width:100%;
+    	
+	}
