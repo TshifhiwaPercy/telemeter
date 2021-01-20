@@ -1,0 +1,97 @@
+
+/**Navigation menu**/
+
+
+/* #companyLogo{
+	padding-top: 15px;
+	margin: auto;
+	width: auto;
+	height: 60px;
+} */
+/* #imgLOGO {
+	width: auto;
+	height: 45px;
+	margin-bottom: 15px;
+} */
+body{
+	    background-image:url("../images/technology-3243375_1920.jpg");
+    	background-size:100% 100%;
+    	background-position:center;
+    	background-repeat:no-repeat;
+    	background-attachment: fixed;
+}
+    .main_content{
+    	position:absolute;
+    	height:100%;
+    	width:100%;
+    }
+    .first_Section{
+    	
+    	box-shadow:0px 1px 1px #263238;
+    	margin-bottom:3px;
+
+    }
+	#who_are_we{
+		color:white;
+		text-align:center;
+	}
+	.who_are_we_article{
+		text-align:center;
+		color:white;
+		font:arial;
+	}
+    .second_Section{
+    	height:40%;
+		background-color: rgb(31, 137, 152);
+    }
+
+	.uList {
+		color: rgb(225, 225, 225);
+	}
+	#our_team_header {
+		color:white;
+		margin-left: 5px;
+	}
+	#second_section_header {
+		color: white;
+		margin-left: 5px;
+	}
+    .content_container{
+    	background-color: rgb(29, 163, 158);
+    	position: absolute;
+    	width:100%;
+    }
+	.content{
+		text-align:left;
+		margin-left: 30px;
+	}
+	.developer_image{
+		height:200px;
+		width:200px;
+		border-radius:50%;
+		margin-left: 15px;
+	}
+	.developer_name {
+		margin-left: 5px;
+	}
+    .developer_statement {
+		margin-left: 5px;
+	}
+	.developer_image:hover {
+		transform: scale(1.01);
+	}
+
+	/*Media queries*/
+	/*Desktop*/
+	@media(min-width:900px){
+		.first_Section{
+			width:80%;
+			margin-left:10%;
+			backdrop-filter:blur(4px);
+
+		}
+		.first_Section:hover{
+			backdrop-filter:blur(15px);
+			transition:backdrop-filter 1s ease-in-out;
+		}
+	}
