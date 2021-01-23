@@ -1,1 +1,5 @@
-[0117/181622.536:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+<ul type="none" style=";margin:0;padding:0;">
+						<li><i class="bi-geo-alt-fill"></i><label id="lblAddress">1946 Insuze street</label></li>
+						<li><a href="tel:0119434586" id="tel_Link"><i class="bi-telephone"></i><label>011 9434 586</label></a></li>
+						<li style="display:table-cell;vertical-align:center"><a href="email:telemetertechnologies@gmail.com" id="email_Link"><i class="bi-envelope-fill"></i><label>telemetertechnologies@gmail.com</label></a></li>
+					</ul>

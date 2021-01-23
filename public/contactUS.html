@@ -18,7 +18,7 @@
         <script type="text/javascript" src="javascript/materialize.js"></script>
 		<title>Contact Us</title>
 	</head>
-	<body class="contactBody" onresize="reSize();">
+	<body class="contactBody" onload="pageLoad();" onresize="reSize();pageLoad();">
 
 		<div class="outer_contactUs">
 			<div class="header" id="header">
@@ -27,34 +27,44 @@
                 <nav role="navigation" class="navBar">
                     <ul class="navMenu" id="navMenu" type="none">
                         <li class="navItem"><a href="index.html" class="navLink  waves-effect waves-orange">Home<hr class="hr_nav"/></a></li>
-                        <li class="navItem"><a href="#" class="navLink">Contact us<hr class="hr_nav"/></a></li>
-                        <li class="navItem"><a href="#" class="navLink">About us<hr class="hr_nav"/></a></li>
+                        <li class="navItem"><a href="contactUS.html" class="navLink">Contact us<hr class="hr_nav"/></a></li>
+                        <li class="navItem"><a href="about.html" class="navLink">About us<hr class="hr_nav"/></a></li>
                     </ul>
                     <p id="menu_opener_container"><a href="#" id="menu_opener_link" onclick="openMenu();"><i class="bi-list" id="menu_opener" ></i>menu</a></p>
                 </nav>
             </div>
-			<div class="main_contact_content">
-				<div class="contact_form">
-					<h1>Contact Us</h1>
-					<div class="txtb">
-						<label>Name:</label>
-						<input type="text" name="" value="" placeholder="Enter your full names">
-					</div>
-					<div class="txtb">
-						<label>Email:</label>
-						<input type="email" name="" value="" placeholder="Enter your email address">
-					</div>
-					<div class="txtb">
-						<label>Subject:</label>
-						<input type="text" name="" value="" placeholder="Enter the subject line">
-					</div>
-					<div class="txtb">
-						<label>Message:</label>
-						<textarea onfocus="letterCount();" onfocusout="clearTimer();" placeholder="Enter your message" id="txtArea"></textarea>
-					</div>
-						<p id="letter_count" style="text-align:right">0/250</p>
-					<a class="btn">Send Email</a>
+            
+			<div class="row main_contact_content" id="main_container">
+				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h3 id="getInTouch">Get in Touch<i class="bi-info-circle"></i></h3>
+					<hr id="hr_getInTouch" />
+					<h4 id="enq">If you have an inquiry please leave us a message below</h4>
 				</div>
+
+				<div class="col-sm12 col-md-12 col-xl-6 col-lg-6 contact_form">
+					<input type="text" id="txtName" placeholder="Enter your name here" /><br/>
+					<input type="email" id="txtEmail" placeholder="Enter your email address" /><br/>
+					<textarea id="txtArea" onfocus="letterCount();" onfocusout="clearTimer();" placeholder="Enter your message here"></textarea>
+
+					<p id="letter_count">0/250</p>
+					<a class="btn">Send</a>
+				</div>
+
+				<div class="col-sm12 col-md-12 col-lg-6 col-xl-6  general_Information">
+					<hr/>
+					<h3 id="mob_contact_details" style="text-align:center;">Contact Details</h3>
+					<hr />
+					<ul type="none" style="margin:0;padding:0;">
+						<i class="bi-geo-alt-fill"></i><li style="text-align:center;"><label id="lblAddress">1946 Insuze street</label></li>
+
+						<i  class="bi-telephone"></i><li style="text-align:center;"><a href="tel:0119434586" id="tel_Link"><label>011 9434 586</label></a></li>
+
+						<i class="bi-envelope-fill"></i><li style="text-align:center;"><a href="email:telemetertechnologies@gmail.com" id="email_Link"><label>telemetertech@gmail.com</label></a></li>
+					</ul>
+					<hr id="gen_Info_bottomLine" />
+				</div>
+				</div>
+				
 			</div>
 		</div>
 	</body>
