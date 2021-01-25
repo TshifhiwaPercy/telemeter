@@ -20,10 +20,9 @@ hr{
 	padding-top:20px;
 	
 }
-.general_Information{
-
+.formShower{
+	cursor:crosshair;
 }
-
 #txtArea{
 	height:45%;
 }
@@ -84,6 +83,7 @@ hr{
 		font-size:20px;
 		padding:100px;
 		padding-top:0;
+
 	}
 	#email_Link{
 		text-decoration:none;
@@ -95,6 +95,11 @@ hr{
 	ul >i{
 		position:absolute;
 	}
+	.formShower{
+		visibility: hidden;
+		position:absolute;
+	}
+
 	
 }
 /*IPad Pro screen*/
@@ -102,24 +107,44 @@ hr{
 	.row> .general_Information, .contact_form{
 		margin-top:-400px;
 	}
+	.general_Information,.contact_form{
+		height:auto;
+		visibility: visible;
+		bottom:auto;
+		top:auto;
+	}
 }
 
 /*Mobile*/
 @media(max-width:1023px){
 	body{
 		text-align:center;
+
+	}
+
+	.row{
+		overflow:hidden;
 	}
 	.row> .general_Information, .contact_form{
 		margin-top:0px;
 	}
+	.general_Information{
+		bottom:0;
+		height:0; 
+		visibility: hidden;
+
+	}
 	.contact_form{
+		top:0;
 		overflow:hidden;
-		min-height:300px;
+		padding-bottom:60px;
+
 
 	}
 	.general_Information >hr{
 		width:50%;
 		margin-left:25%;
+
 	}
 	.btn{
 		margin-left:5%;
@@ -128,6 +153,10 @@ hr{
 		display:flex;
 		position:absolute;
 		margin-left:15%;
+	}
+	.formShower[0]{
+		visibility: visible;
+		position:relative;
 	}
 
 	

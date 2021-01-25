@@ -41,16 +41,18 @@
 					<h4 id="enq">If you have an inquiry please leave us a message below</h4>
 				</div>
 
-				<div class="col-sm12 col-md-12 col-xl-6 col-lg-6 contact_form">
+				<div class="col-sm12 col-md-12 col-xl-6 col-lg-6 contact_form" id="contact_form">
 					<input type="text" id="txtName" placeholder="Enter your name here" /><br/>
 					<input type="email" id="txtEmail" placeholder="Enter your email address" /><br/>
 					<textarea id="txtArea" onfocus="letterCount();" onfocusout="clearTimer();" placeholder="Enter your message here"></textarea>
 
 					<p id="letter_count">0/250</p>
 					<a class="btn">Send</a>
+					<a href="#" class="formShower" onclick="showMore();"><i class="bi-arrow-down-short" id="show"></i><label id="displayed_info">contact details</label></a>
 				</div>
 
-				<div class="col-sm12 col-md-12 col-lg-6 col-xl-6  general_Information">
+				<div class="col-sm12 col-md-12 col-lg-6 col-xl-6  general_Information" id="general_Information">
+					<a href="#" class="formShower" onclick="showMore();"><i class="bi-arrow-up-short" id="show"></i><label id="displayed_info">contact form</label></a>
 					<hr/>
 					<h3 id="mob_contact_details" style="text-align:center;">Contact Details</h3>
 					<hr />
